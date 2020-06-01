@@ -11,6 +11,27 @@
 umi block https://github.com/https://github.com/MrXujiang/ticker/tree/master/ticker
 ```
 
+## 启动
+
+```
+npm run dev or yarn dev
+```
+
+## demo
+
+``` js
+<Ticker
+  width={120}
+  lineNum={30}
+  percent={30}
+  text="又胖了呢"
+  value={10}
+  unit="kg"
+  maxHeight={12}
+  textStyle={{color: '#fff', backgroundColor: '#000', marginTop: '10px'}}
+/>
+```
+
 ## api文档
 | 属性名 | 类型 | 默认值 | 解释 |
 |  ----  | ----  | ---- | ---- |
