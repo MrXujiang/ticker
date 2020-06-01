@@ -1,0 +1,27 @@
+{
+  "name": "ticker",
+  "version": "0.0.1",
+  "description": "一个基于react的轻量级刻度线可视化组件",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "authors": {
+    "name": "徐小夕",
+    "email": "xujiang156@qq.com"
+  },
+  "repository": "https://github.com/MrXujiang/ticker/ticker",
+  "scripts": {
+    "dev": "father doc dev",
+    "build": "father build"
+  },
+  "peerDependencies": {
+    "react": "16.x"
+  },
+  "devDependencies": {
+    "father": "^2.16.0",
+    "typescript": "^3.3.3"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@types/classnames": "^2.2.10"
+  }
+}

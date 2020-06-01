@@ -1,0 +1,37 @@
+---
+name: Home
+route: /
+order: -1
+sidebar: true
+---
+
+import Ticker from './';
+
+# Ticker Component
+
+## 默认
+
+<Ticker />
+
+## 更换颜色, 数量等属性
+
+<Ticker text="默认"></Ticker><i style={{paddingRight: '20px'}} /><Ticker width={200} lineNum={50} percent={20} value={20} />
+<i style={{paddingRight: '20px'}} /><Ticker width={160} lineNum={100} percent={80} text="正态分布" value={80} unit="s" maxHeight={60} />
+<i style={{paddingRight: '20px'}} /><Ticker width={160} lineNum={10} percent={30} text="标尺" value={80} unit="cm" maxHeight={5} />
+<i style={{paddingRight: '20px'}} /><Ticker width={120} lineNum={30} percent={30} text="又胖了呢" value={10} unit="kg" maxHeight={12} textStyle={{color: '#fff', backgroundColor: '#000', marginTop: '10px'}} />
+
+## api文档
+| 属性名 | 类型 | 默认值 | 解释 |
+|  ----  | ----  | ---- | ---- |
+| width | number | 100 |  刻度组件的宽度   |
+| maxHeight | number | 10 |  刻度线的最大高度   |
+| percent | number | 50 |  当前刻度条的进度,值在0~100之间   |
+| text | string | '' |  刻度条组件的文本   |
+| value | number | 50 |  刻度组件的当前值   |
+| showValue | boolean | true |  是否展示刻度线值  |
+| unit | string | '' |  刻度线值的单位   |
+| lineNum |number | 12 |  刻度条的数量   |
+| defaultColor | string | '#06c' |  刻度线默认颜色   |
+| activeColor | string | 'red' |  刻度线激活部分的颜色  |
+| textStyle | object | {} |  刻度线文本样式   |
+| valueStyle | object | {} |  刻度条值的样式   |
